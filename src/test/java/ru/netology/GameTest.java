@@ -1,3 +1,5 @@
+package ru.netology;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,12 +15,12 @@ public class GameTest {
 
     @BeforeEach
     public void setup() {
-        game.register(player1);
-        game.register(player2);
-        game.register(player3);
-        game.register(player4);
-        game.register(player5);
-        game.register(player6);
+        game.register("Данила", player1);
+        game.register("Егор", player2);
+        game.register("Кирилл", player3);
+        game.register("Марк", player4);
+        game.register("Тарас", player5);
+        game.register("Юрий", player6);
     }
 
     @Test
@@ -67,6 +69,13 @@ public class GameTest {
     public void getIdTestTheSeventh() {
         int expected = 4;
         int actual = player4.getId();
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void getIdTestTheNinth() {
+        String expected = "Марк";
+        String actual = player4.getName();
         Assertions.assertEquals(expected, actual);
     }
 }
