@@ -36,16 +36,3 @@ public class Game {
 
     }
 }
-
-
-//public class Game {
-
-//        if (player1.getStrength() > player2.getStrength()) {
-//            return 1;
-//        }
-//        if (player1.getStrength() < player2.getStrength()) {
-//            return 2;
-//        }
-//        return 0;
-//    }
-//}
